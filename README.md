@@ -1,3 +1,23 @@
+[aws-info-helper]: https://github.com/kenjyco/aws-info-helper
+[bg-helper]: https://github.com/kenjyco/bg-helper
+[chloop]: https://github.com/kenjyco/chloop
+[dt-helper]: https://github.com/kenjyco/dt-helper
+[easy-workflow-manager]: https://github.com/kenjyco/easy-workflow-manager
+[fs-helper]: https://github.com/kenjyco/fs-helper
+[input-helper]: https://github.com/kenjyco/input-helper
+[jira-helper]: https://github.com/kenjyco/jira-helper
+[mocp-cli]: https://github.com/kenjyco/mocp-cli
+[mocp]: https://github.com/kenjyco/mocp
+[mongo-helper]: https://github.com/kenjyco/mongo-helper
+[redis-helper]: https://github.com/kenjyco/redis-helper
+[settings-helper]: https://github.com/kenjyco/settings-helper
+[sql-helper]: https://github.com/kenjyco/sql-helper
+[vlc-helper]: https://github.com/kenjyco/vlc-helper
+[webclient-helper]: https://github.com/kenjyco/webclient-helper
+[yt-helper]: https://github.com/kenjyco/yt-helper
+
+### Welcome!
+
 Most of the repos here are meant to simplify and enhance the developer
 experience, especially as it relates to working in a command-line environment,
 using common command-line tools, modifying source code, setting up developer
@@ -6,10 +26,49 @@ prototypes, exploring open source projects, and learning.
 
 When I first learned UNIX fundamentals and shell scripting in 2004, I was also
 exposed to the [vim text editor](https://www.vim.org/about.php) and became
-hooked on the efficient ways of navigating and editing text. I tend to use
-vim-keybindings in other programs wherever they are available.
+hooked on the efficient ways of navigating files, editing text, and performing
+different actions in the various [editor
+modes](https://www.freecodecamp.org/news/vim-editor-modes-explained) it
+provides. I tend to use vim-keybindings in other programs wherever they are
+available, including bash/zsh/fish shell prompts.
 
-### Python
+### Python packages
+
+I'm a big fan of the in-memory data structure server
+[Redis](https://redis.io/topics/data-types-intro) and my favorite personal
+project is [redis-helper][]! It allows you to **easily store Python dicts in
+Redis, optionally index some fields, perform powerful searches**, and more! It
+also uses most of my more fundamental Python packages ([bg-helper][],
+[dt-helper][], [fs-helper][], [input-helper][], and [settings-helper][]).
+
+The [chloop][] package provides the `GetCharLoop` class and *uses redis-helper* to
+save command history/output/errors. When an instance of it is invoked, a
+[REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) is
+started where unbuffered input is accepted (i.e. acts on a key press without
+hitting `Enter/Return`). You can define hotkeys to perform certain actions and
+if you press `:` (similar to entering "command mode" in vim ), you can type a
+command and pass some arguments. The "colon commands" are actually methods
+defined on your sub-class of `GetCharloop` (as long as the method doesn't start
+with `_`). That REPL can be exited via `Ctrl`+`c` or `Ctrl`+`d` (another
+UNIX/Linux convention). This package is what makes [mocp-cli][], [vlc-helper][],
+and [jira-helper][] so handy!
+
+I'm also a fan of the document-oriented database mongoDB, especially the
+[aggregation
+pipeline](https://docs.mongodb.com/manual/core/aggregation-pipeline) for
+transforming documents and generating reports. My [mongo-helper][] package (which
+is currently lacking in documentation) provides a `Mongo` class with a
+`_build_pipeline` method (to build pipeline stages from arguments) and
+an `ez_pipeline` method (that uses `_build_pipeline` to group and count data for
+reports), among other things.
+
+There is [sql-helper][] for when you need to explore and interact with
+PostgreSQL/MySQL databases, [aws-info-helper][] when you want relevant/condensed
+info from boto3, [easy-workflow-manager][] for
+branching/QA-ing/merging/releasing with `git`, [webclient-helper][] to interact
+with APIs on the web, and [yt-helper][] to fetch media.
+
+### Learning Python
 
 The [Learning Python 3
 gist](https://gist.github.com/kenjyco/69eeb503125035f21a9d) **(28 stars as of
@@ -37,30 +96,6 @@ gist](https://gist.github.com/kenjyco/cb601fb3075a724c9e2951f164d1d4d8) has
 information about how the various Python packages in this account are connected
 to each other, the console-scripts that are provided, and the most used features
 of each.
-
-- fundamental/core packages
-    - [bg-helper](https://github.com/kenjyco/bg-helper)
-    - [chloop](https://github.com/kenjyco/chloop)
-    - [dt-helper](https://github.com/kenjyco/dt-helper)
-    - [fs-helper](https://github.com/kenjyco/fs-helper)
-    - [input-helper](https://github.com/kenjyco/input-helper)
-    - [settings-helper](https://github.com/kenjyco/settings-helper)
-    - [webclient-helper](https://github.com/kenjyco/webclient-helper)
-- data packages
-    - [mongo-helper](https://github.com/kenjyco/mongo-helper)
-    - [redis-helper](https://github.com/kenjyco/redis-helper)
-    - [sql-helper](https://github.com/kenjyco/sql-helper)
-- audio/video packages
-    - [mocp](https://github.com/kenjyco/mocp)
-    - [mocp-cli](https://github.com/kenjyco/mocp-cli)
-    - [yt-helper](https://github.com/kenjyco/yt-helper)
-    - [vlc-helper](https://github.com/kenjyco/vlc-helper)
-- misc packages
-    - [aws-info-helper](https://github.com/kenjyco/aws-info-helper)
-    - [beu](https://github.com/kenjyco/beu)
-    - [easy-workflow-manager](https://github.com/kenjyco/easy-workflow-manager)
-    - [jira-helper](https://github.com/kenjyco/jira-helper)
-    - [parse-helper](https://github.com/kenjyco/parse-helper)
 
 ### Shell/Setup
 
@@ -95,68 +130,12 @@ of each.
           shell func that will clone all of these locally into grouped
           sub-directories (this takes a LONG time to run and a significant
           amount of space on disk)
-        - info as of 11/17/20 at commit
-          [02f0d43](https://github.com/kenjyco/base/blob/02f0d432230a710fd8cdc0fe7da80d2c7e835129/repos.sh)
-
-            ```
-            opensource % du -sch *
-            89M     algorithms
-            174M    books
-            39G     c
-            6.9G    c++
-            2.5G    dart
-            179M    dockerfiles
-            2.6G    docs
-            197M    elixir
-            740M    erlang
-            11G     go
-            85M     haskell
-            7.4G    java
-            8.2G    javascript
-            1.6M    jupyter
-            40M     lua
-            18G     python
-            132M    python_async
-            3.2G    ruby
-            4.6G    rust
-            177M    sass
-            713M    scala
-            192M    shell
-            26M     swift
-            9.5G    typescript
-            2.3M    vimscript
-            114G    total
-
-            opensource % repos-dirs
-            168 /home/ken/repos/opensource/python
-             80 /home/ken/repos/opensource/javascript
-             77 /home/ken/repos/opensource/docs
-             67 /home/ken/repos/opensource/c
-             54 /home/ken/repos/opensource/go
-             34 /home/ken/repos/opensource/typescript
-             30 /home/ken/repos/opensource/ruby
-             27 /home/ken/repos/opensource/java
-             19 /home/ken/repos/opensource/shell
-             17 /home/ken/repos/opensource/c++
-             12 /home/ken/repos/opensource/elixir
-             12 /home/ken/repos/opensource/python_async
-              9 /home/ken/repos/opensource/books
-              9 /home/ken/repos/opensource/rust
-              8 /home/ken/repos/opensource/algorithms
-              7 /home/ken/repos/opensource/dart
-              4 /home/ken/repos/opensource/dockerfiles
-              3 /home/ken/repos/opensource/erlang
-              3 /home/ken/repos/opensource/lua
-              3 /home/ken/repos/opensource/scala
-              2 /home/ken/repos/opensource/vimscript
-              1 /home/ken/repos/opensource/haskell
-              1 /home/ken/repos/opensource/jupyter
-              1 /home/ken/repos/opensource/sass
-              1 /home/ken/repos/opensource/swift
-            ```
-        - the benefit of having so many popular repositories cloned locally in
-          an organized manner allows exploring code, project layout, patterns,
-          and examples that exist in them
+        - as of 11/17/20 at commit
+          [02f0d43](https://github.com/kenjyco/base/blob/02f0d432230a710fd8cdc0fe7da80d2c7e835129/repos.sh),
+          there are 649 repos taking up 114 GB of space locally
+        - the benefit of having so many popular repositories cloned locally (in
+          an organized manner) is that it allows exploring code, project
+          layouts, patterns, and examples that exist in them
 - the [dotfiles](https://github.com/kenjyco/dotfiles) repo is where I have Vim,
   tmux, Git, and X/awesome-wm settings (for Linux and Mac)
     - there is a
