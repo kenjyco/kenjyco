@@ -133,9 +133,9 @@ of each.
         - as of 11/17/20 at commit
           [02f0d43](https://github.com/kenjyco/base/blob/02f0d432230a710fd8cdc0fe7da80d2c7e835129/repos.sh),
           there are 649 repos taking up 114 GB of space locally
-        - the benefit of having so many popular repositories cloned locally (in
+        - **the benefit of having so many popular repositories cloned locally (in
           an organized manner) is that it allows exploring code, project
-          layouts, patterns, and examples that exist in them
+          layouts, patterns, and examples that exist in them**
 - the [dotfiles](https://github.com/kenjyco/dotfiles) repo is where I have Vim,
   tmux, Git, and X/awesome-wm settings (for Linux and Mac)
     - there is a
