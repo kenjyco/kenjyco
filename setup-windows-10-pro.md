@@ -8,10 +8,12 @@ Setup Windows 10 Pro
 
 # Windows shortcuts
 
-- `win`             open menu to search for things ("this pc", "settings", "powershell", etc)
-- `win` + `e`       open File Explorer (like Finder in Mac)
-- `win` + `r`       open Run dialog (type something like "notepad" or "mspaint")
-- `win` + `PrtScn`  save screenshot of everything you can see to a file
+- `win`                  open menu to search for things ("this pc", "settings", "powershell")
+- `win` + `e`            open File Explorer (like Finder in Mac)
+- `win` + `r`            open Run dialog (type something like "notepad" or "mspaint")
+- `win` + `PrtScn`       save screenshot of everything you can see to a file
+- `win` + `Shift` + `s`  copy screenshot of selected area to clipboard
+- `Alt` + `PrtScr`       copy screenshot of current window to clipboard
 
 # Start Powershell as administrator
 
