@@ -122,3 +122,21 @@ On ethernet
 ```
 % curl ifconfig.me
 ```
+
+# Fixing xcode after OS upgrade
+
+> For whatever reason, when you have a major system upgrade on Macs, there are
+> almost always some issues...
+
+If some command line tools you are used to running stop working immediate after
+system upgrade, try re-installing xcode
+
+```
+% xcode-select --install
+```
+
+When the popup opens (The "xcode-select" command requires the
+command line developer tools. Would you like to install the tools now?), click
+"Install", then click "Agree"
+
+After several minutes, you'll see "The software was installed".. click "Done"
