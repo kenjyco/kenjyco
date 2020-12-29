@@ -140,3 +140,16 @@ command line developer tools. Would you like to install the tools now?), click
 "Install", then click "Agree"
 
 After several minutes, you'll see "The software was installed".. click "Done"
+
+# Re-install git with homebrew
+
+> If after a system upgrade, the `repos-update` command does dumb stuff like
+> delete files in a repo and stage them, you may need to re-install git
+>
+> First, run `git restore --staged .` in any repos where that occured.
+
+```
+% brew reinstall git
+
+% brew link --overwrite git
+```
