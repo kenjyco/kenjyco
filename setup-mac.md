@@ -153,3 +153,25 @@ After several minutes, you'll see "The software was installed".. click "Done"
 
 % brew link --overwrite git
 ```
+
+# The brew cask sequence
+
+> To install GUI programs in the past with homebrew, you had to do something
+> like `brew cask install iterm2` or `brew cask install vlc`.
+
+After attempting to `brew cask install zettlr` on 2/23/21, the homebrew tool
+auto-updated as usual, but at the end I received **`Error: Unknown command:
+cask`**. Not a big deal, I was able to install with `brew install zettlr`
+
+However, a little later I noticed that when I opened a new terminal window, I
+was getting the following
+
+```
+compinit:503: no such file or directory: /usr/local/share/zsh/site-functions/_brew_cask
+```
+
+To fix:
+
+```
+% brew cleanup
+```
