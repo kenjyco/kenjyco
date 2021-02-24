@@ -128,8 +128,8 @@ On ethernet
 > For whatever reason, when you have a major system upgrade on Macs, there are
 > almost always some issues...
 
-If some command line tools you are used to running stop working immediate after
-system upgrade, try re-installing xcode
+If some command line tools you are used to running stop working immediately
+after system upgrade, try re-installing xcode
 
 ```
 % xcode-select --install
