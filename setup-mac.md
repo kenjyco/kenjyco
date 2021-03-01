@@ -175,3 +175,28 @@ To fix:
 ```
 % brew cleanup
 ```
+
+# Upgrading `reattach-to-user-namespace` wrapper
+
+If at some point you get a message similar to **warning:
+reattach-to-user-namespace: unsupported new OS, trying as if it were 10.10**
+when you start a new `tmux` session, try upgrading
+
+```
+% brew upgrade reattach-to-user-namespace
+```
+
+Then open a new terminal and try to start a new session with `tmux`
+
+```
+% tmux
+```
+
+When you call `reattach-to-user-namespace --version`, the output also shows
+versions of OS X that are supported
+
+```
+% reattach-to-user-namespace --version
+reattach-to-user-namespace version 2.9
+    Supported OSes: OS X 10.5-11.0
+```
