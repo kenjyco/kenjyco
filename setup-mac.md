@@ -117,6 +117,15 @@ On ethernet
 % ipconfig getifaddr en1
 ```
 
+List Hardware ports
+
+> You may need to list hardware ports if you get no results when using `en0` or
+> `en1` (i.e. when using a USB Ethernet adapter)
+
+```
+% networksetup -listallhardwareports
+```
+
 ### External IP
 
 ```
