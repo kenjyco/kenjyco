@@ -209,3 +209,30 @@ versions of OS X that are supported
 reattach-to-user-namespace version 2.9
     Supported OSes: OS X 10.5-11.0
 ```
+
+# TODO
+
+Figure out how and when the homebrew wrappers actually get loaded. Only seems to
+work for an interactive session, not when using `ssh -t`. The `brew` command
+and any programs installed by brew into `/usr/local` like `realpath` are
+unavailable
+
+```
+% ssh somemac -t 'brew --prefix'
+zsh:1: command not found: brew
+Connection to {some IP address} closed.
+
+% ssh somemac -t 'echo $PATH'
+/usr/bin:/bin:/usr/sbin:/sbin
+Connection to {some IP address} closed.
+```
+
+```
+% ssh somemac
+
+% brew --prefix
+/usr/local
+
+% echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+```
