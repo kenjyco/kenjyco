@@ -75,7 +75,7 @@ screen, toggle everything to "no" and hit "accept"
 
 # Check and modify some settings
 
-Press `win` ken; search "settings" (app)
+Press `win` key; search "settings" (app)
 
 - scroll to the bottom on left panel to click "about"
 - "windows specifications"
@@ -89,7 +89,7 @@ Press `win` ken; search "settings" (app)
     - click "Turn on BitLocker
     - click "save to a file" for "recovery key" (save to usb stick)
 
-Press `win` ken; search "this pc"
+Press `win` key; search "this pc"
 
 - right-click "manage"
 

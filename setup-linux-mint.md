@@ -12,7 +12,7 @@ Setup Linux Mint
 
 # Open a terminal, sync package index, and install some packages
 
-First thing is to resync the packed index from sources specified in
+First thing is to resync the package index from sources specified in
 `/etc/apt/sources.list` and files in `/etc/apt/sources.list.d`
 
 ```
@@ -32,7 +32,7 @@ $ cd base
 $ source ./install.sh all
 ```
 
-# Click the sheild icon in the in the lower right area of the screen
+# Click the shield icon in the in the lower right area of the screen
 
 > This is the Update Manager, so make sure you are connected to the internet
 
@@ -41,7 +41,7 @@ $ source ./install.sh all
   the Update"
     - type your user's password
 - When presented with the pre-selected list of package names to upgrade, click
-  the "Install Updates" button near the top of thw Update Manager window
+  the "Install Updates" button near the top of the Update Manager window
     - If "This upgrade will trigger additional changes" appears, click "OK"
         - type your user's password again
     - (this will take a while the first time it runs)
@@ -49,7 +49,7 @@ $ source ./install.sh all
       take effect, please reboot your system as soon as possible" appears,
 
 Also note that over time, there will be new versions of the Update Manager. Try
-to notice when you see a little red dot in the sheild icon in the lower right
+to notice when you see a little red dot in the shield icon in the lower right
 area of the screen (indicating an update is available)
 
 # TODO
