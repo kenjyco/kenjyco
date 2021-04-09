@@ -210,6 +210,12 @@ reattach-to-user-namespace version 2.9
     Supported OSes: OS X 10.5-11.0
 ```
 
+# Startup sequences
+
+Full list at <https://support.apple.com/en-us/HT201255>
+
+- `Command` + `r`       startup the built-in recovery system
+
 # TODO
 
 Figure out how and when the homebrew wrappers actually get loaded. Only seems to
