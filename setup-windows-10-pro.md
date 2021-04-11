@@ -107,3 +107,5 @@ Press `win` key; search "this pc"
 - <https://docs.microsoft.com/en-us/windows/wsl/install-win10>
 - <https://docs.microsoft.com/en-us/windows/wsl/install-manual>
 - Then create SSH key and start cli/dev stuff
+- Then make sure `kind` (for kubernetes) can be installed
+  <https://kind.sigs.k8s.io/docs/user/using-wsl2>
