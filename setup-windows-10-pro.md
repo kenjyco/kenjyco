@@ -109,3 +109,5 @@ Press `win` key; search "this pc"
 - Then create SSH key and start cli/dev stuff
 - Then make sure `kind` (for kubernetes) can be installed
   <https://kind.sigs.k8s.io/docs/user/using-wsl2>
+- Also checkout chocolatey (like homebrew, but for windows)
+  <https://chocolatey.org/install>
