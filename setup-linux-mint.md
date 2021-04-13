@@ -47,10 +47,29 @@ $ source ./install.sh all
     - (this will take a while the first time it runs)
     - If "Reboot required: You have installed updates that require a reboot to
       take effect, please reboot your system as soon as possible" appears,
+      reboot the computer after adjusting more initial settings
 
-Also note that over time, there will be new versions of the Update Manager. Try
-to notice when you see a little red dot in the shield icon in the lower right
-area of the screen (indicating an update is available)
+Also note that **over time, there will be new versions of the Update Manager**.
+Try to notice when you see a little red dot in the shield icon in the lower
+right area of the screen (indicating an update is available)
+
+# Adjust more Update Manager settings
+
+- With the Update Manager open, click the "Edit" menu and select "Software
+  Sources"
+    - Type your password and click "Authenticate"
+
+# Use the GUI to change some system settings
+
+- Press the `win` key to pull up the Linux Mint menu
+- Type "windows" and click on the result in the menu
+    - Click on the "Behavior" tab
+        - Change "Window focus mode" from "Click" to "Mouse" (which allows you
+          to focus on a window to quickly type something or scroll, without
+          bringing it to the forefront)
+    - Click on the "Alt-Tab" tab
+        - Change "Alt-Tab switcher style" from "Icons and thumbnails" to "Window
+          preview (no icons)"
 
 # TODO
 
