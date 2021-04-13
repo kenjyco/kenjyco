@@ -102,11 +102,17 @@ Press `win` key; search "this pc"
 
 # TODO
 
-**Add sections on setting up Windows Subsystem for Linux (WSL2)**
+**Add sections on setting up Windows Subsystem for Linux (WSL 2)**
 
 - <https://docs.microsoft.com/en-us/windows/wsl/install-win10>
 - <https://docs.microsoft.com/en-us/windows/wsl/install-manual>
 - Then create SSH key and start cli/dev stuff
+- <https://docs.docker.com/docker-for-windows/install>
+    - Seems as though newer versions of Docker Desktop for Windows works with
+      Windows 10 Home now (thanks to WSL 2 backend)
+    - <https://docs.docker.com/docker-for-windows/docker-toolbox> Docker Toolbox
+      is now depricated (yay) and there are instructions to migrate to Docker
+      Desktop and uninstall uninstall Docker Toolbox
 - Then make sure `kind` (for kubernetes) can be installed
   <https://kind.sigs.k8s.io/docs/user/using-wsl2>
 - Also checkout chocolatey (like homebrew, but for windows)
