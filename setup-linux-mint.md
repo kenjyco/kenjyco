@@ -5,6 +5,8 @@ Setup Linux Mint
 
 # Linux Mint shortcuts
 
+> Using the [Cinnamon Desktop Environment](https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)
+
 - `win`                  open menu to search for things ("display", "software manager", "firefox")
 - `ctrl` + `alt` + `t`   open a new terminal window
 - `ctrl` + `alt` + `l`   lock the screen
