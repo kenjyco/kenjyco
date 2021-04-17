@@ -126,6 +126,12 @@ List Hardware ports
 % networksetup -listallhardwareports
 ```
 
+Checking on all hardware ports
+
+```
+% networksetup -listallhardwareports | grep Device | awk '{print $2}' | tr '\n' '\0' | xargs -0 -n1 ipconfig getifaddr
+```
+
 ### External IP
 
 ```
