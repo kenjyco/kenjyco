@@ -222,29 +222,25 @@ Full list at <https://support.apple.com/en-us/HT201255>
 
 - `Command` + `r`       startup the built-in recovery system
 
-# TODO
+# Quirks SSH-ing to Macs
 
-Figure out how and when the homebrew wrappers actually get loaded. Only seems to
-work for an interactive session, not when using `ssh -t`. The `brew` command
-and any programs installed by brew into `/usr/local` like `realpath` are
-unavailable
+### Extra characters appearing when you type
 
-```
-% ssh somemac -t 'brew --prefix'
-zsh:1: command not found: brew
-Connection to {some IP address} closed.
-
-% ssh somemac -t 'echo $PATH'
-/usr/bin:/bin:/usr/sbin:/sbin
-Connection to {some IP address} closed.
-```
+You may need to set your `TERM` variable first
 
 ```
-% ssh somemac
+% TERM=xterm-256-color ssh somemac
+```
 
-% brew --prefix
-/usr/local
+### Unable to access installed commands when using `ssh -t`
 
-% echo $PATH
-/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+Sometimes you just want to execute a command or sequence of commands on a remote
+machine and exit immediately, which `ssh -t` allows you to do. However, for
+programs installed with `brew` (into `/usr/local/bin`), you may get a "command
+not found" error.
+
+Update your `PATH` variable to include `/usr/local/bin`
+
+```
+% ssh somemac -t 'PATH="/usr/local/bin:$PATH"; some-command'
 ```
