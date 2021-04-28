@@ -73,6 +73,17 @@ right area of the screen (indicating an update is available)
         - Change "Alt-Tab switcher style" from "Icons and thumbnails" to "Window
           preview (no icons)"
 
+# Troubleshooting
+
+### "Missing operating system" on boot?
+
+Unplug the USB stick and hit `Ctrl` + `Alt` + `Delete`.
+
+> There may be a BIOS setting enabled to try to boot from an external USB device
+> if it's connected. If that device doesn't have a bootable partition, it will
+> error out.
+
+
 # TODO
 
 - removing prompt in Update Manager for "do you want to switch to a local
