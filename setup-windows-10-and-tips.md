@@ -25,6 +25,10 @@ open as an administrator
 
 # Create regular user with admin rights from Powershell
 
+> Each leading `>` below represents a Powershell prompt, which is waiting for
+> you to type (paste) commands. Do not copy the prompt character (`>`) and do
+> not copy the output lines below the commands.
+
 ```
 > $Password = Read-Host -AsSecureString
 **************
