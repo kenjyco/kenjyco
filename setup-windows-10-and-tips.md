@@ -104,6 +104,16 @@ Press `win` key; search "this pc"
 - install updated version of Microsoft Edge Browser
 - add Duckduckgo extension to Edge
 
+# Install Git BASH
+
+Visit <https://github.com/git-for-windows/git/releases/latest>, download the
+`Git-{version}-64-bit.exe` file, then run the installer.
+
+**Git BASH** provides a
+[bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29) emulation to run Git
+from the command-line that behaves the same as the `git` command in Linux/Mac.
+See <https://gitforwindows.org>
+
 # TODO
 
 **Add sections on setting up Windows Subsystem for Linux (WSL 2)**
