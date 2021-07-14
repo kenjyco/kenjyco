@@ -34,6 +34,9 @@ $ cd base
 $ source ./install.sh all
 ```
 
+When asked to "select your prompt mode" go with option 1 (verbose). You can try
+other prompt styles by running the `prompt-select-mode` command.
+
 # Click the shield icon in the in the lower right area of the screen
 
 > This is the Update Manager, so make sure you are connected to the internet
