@@ -124,6 +124,7 @@ See <https://gitforwindows.org>
 - <https://docs.docker.com/docker-for-windows/install>
     - Seems as though newer versions of Docker Desktop for Windows works with
       Windows 10 Home now (thanks to WSL 2 backend)
+      <https://docs.docker.com/docker-for-windows/wsl>
     - <https://docs.docker.com/docker-for-windows/docker-toolbox> Docker Toolbox
       is now depricated (yay) and there are instructions to migrate to Docker
       Desktop and uninstall uninstall Docker Toolbox
