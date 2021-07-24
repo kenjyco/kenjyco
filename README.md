@@ -71,8 +71,8 @@ with APIs on the web, and [yt-helper][] to fetch media.
 ### Learning Python
 
 The [Learning Python 3
-gist](https://gist.github.com/kenjyco/69eeb503125035f21a9d) **(28 stars as of
-11/17/20)** includes an
+gist](https://gist.github.com/kenjyco/69eeb503125035f21a9d) **(40 stars as of
+7/24/21)** includes an
 interactive notebook file and sections on:
 
 - Python objects, basic types, and variables
