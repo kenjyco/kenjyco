@@ -169,6 +169,27 @@ After several minutes, you'll see "The software was installed".. click "Done"
 % brew link --overwrite git
 ```
 
+# Installing Docker
+
+> When there were only Macs with Intel chips, you could just use the `brew` or
+> `brew cask` commands to install docker. Since [Apple started making their own
+> chips](https://www.apple.com/newsroom/2020/11/apple-unleashes-m1) and
+> eventually got them to work with Docker, you must manually go to the website
+> and download the correct `Docker.dmg` for your chip
+
+Visit <https://www.docker.com/products/docker-desktop> and click the button for
+your kind of chip
+
+- After downloading `Docker.dmg` open it
+- Drag the Docker icon to Applications when prompted
+- Use Spotlight Search (`command` + `space`) to search for the new Docker
+  executable and open it
+    - Click the "Open" button when asked "are you sure you want to open it"
+    - Click "Ok" when "Docker Desktop needs privileged access" alert appears
+    - Type your system password and click "Ok"
+    - Click the box by "I accept the terms" on "Our Service Agreement has
+      Changed", then click "Accept"
+
 # The brew cask sequence
 
 > To install GUI programs in the past with homebrew, you had to do something
