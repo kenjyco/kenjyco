@@ -190,6 +190,25 @@ your kind of chip
     - Click the box by "I accept the terms" on "Our Service Agreement has
       Changed", then click "Accept"
 
+# Multiple users with access to homebrew
+
+> Assumes homebrew has already been installed the default way (via their setup
+> script, executed by your primary user).
+
+- Open "System Preferences" and select "Users & Groups"
+    - Click the lock and enter your password
+    - Click the `+` sign
+    - In the "New Account" dropdown, select "Group"
+    - Enter `homebrew` as the Full Name and click "Create Group"
+    - Check the box next to your user
+- Open a Terminal, use the new group and update permissions
+
+    ```
+    % sudo chgrp -R homebrew $(brew --prefix)/*
+
+    % sudo chmod -R g+w $(brew --prefix)/*
+    ```
+
 # The brew cask sequence
 
 > To install GUI programs in the past with homebrew, you had to do something
