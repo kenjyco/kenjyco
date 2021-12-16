@@ -2,7 +2,20 @@ Setup Mac
 =========
 
 > Not including the obvious first step of running system update and installing
-> homebrew via <https://brew.sh>
+> homebrew (via <https://brew.sh> or <https://github.com/kenjyco/base>)
+
+# Allow "Full Disk Access" privileges to Terminal
+
+Open spotlight search (command + space), search "Security & Privacy", and open
+the control panel
+
+- Click the "Privacy" tab
+- Click the lock icon in the lower left and enter your password
+- Scroll down to "Full Disk Access"
+- Click the + and navigate to "Applications" and select Terminal
+- Click the "Quit & Reopen" button
+
+> Also repeat for the iTerm application if you have that installed
 
 # Remote login with SSH
 
