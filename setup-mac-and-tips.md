@@ -151,6 +151,28 @@ Checking on all hardware ports
 % curl ifconfig.me
 ```
 
+# Set hostname
+
+> Even when you open "System Preferences -> Sharing", define a "Computer Name"
+> and hit the "Edit..." button to set a "Local Hostname" the mac will pick up a
+> host name from the DHCP server (which can change depending on what wifi
+> network you are on, or if you are connected to a VPN server) and show
+> something unexpected in your Terminal prompt and/or the `hostname` command.
+
+Check current hostname via `scutil` (not the `hostname` command)
+
+```
+% scutil --get HostName
+```
+
+> It will probably say `HostName: not set`
+
+Set the hostname
+
+```
+% sudo scutil --set HostName 'mycoolhostname'
+```
+
 # Fixing xcode after OS upgrade
 
 > For whatever reason, when you have a major system upgrade on Macs, there are
