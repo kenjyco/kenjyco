@@ -319,3 +319,6 @@ Update your `PATH` variable to include `/usr/local/bin`
 ```
 % ssh somemac -t 'PATH="/usr/local/bin:$PATH"; some-command'
 ```
+
+> In some newer versions of macOS/homebrew, you should use `/opt/homebrew/bin`
+> instead of `/usr/local/bin`
