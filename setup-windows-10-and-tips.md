@@ -12,6 +12,7 @@ Setup Windows 10 Pro
 - `win` + `e`               open File Explorer (like Finder in Mac)
 - `win` + `r`               open Run dialog (type something like "notepad" or "mspaint")
 - `win` + `l`               lock screen
+- `win` + `g`               toggle "game bar" visibility
 - `win` + `PrtScn`          save screenshot of everything you can see to a file
 - `win` + `Shift` + `s`     copy screenshot of selected area to clipboard
 - `Alt` + `PrtScr`          copy screenshot of current window to clipboard
@@ -20,7 +21,7 @@ Setup Windows 10 Pro
 # Start Powershell as administrator
 
 Press `win` key; search "powershell", then right-click "Windows Powershell" to
-open as an administrator
+run as an administrator
 
 - click "yes" when prompted "Do you want to allow this app to make changes to
   your device" (first time running as administrator only)
@@ -81,14 +82,16 @@ screen, toggle everything to "no" and hit "accept"
 
 # Check and modify some settings
 
-Press `win` key; search "settings" (app)
+Press `win` key; search "settings" (app) and open
 
+- click the "System" button on the upper left
 - scroll to the bottom on left panel to click "about"
 - "windows specifications"
-    - Windows 10 Pro
-    - Version 1909
-    - Installed on 3/18/2019
-    - OS build 18363.592
+    - **Edition** Windows 10 Pro
+    - **Version** 20H2
+    - **Installed on** 7/2/2021
+    - **OS build** 19042.1110
+    - **Experience** Windows Feature Experience Pack 120.2212.3530.0
 - "related settings"
     - click "BitLocker settings"
     - ignore "waiting for activation"
@@ -105,6 +108,14 @@ Press `win` key; search "this pc"
   date"
 - install updated version of Microsoft Edge Browser
 - add Duckduckgo extension to Edge
+
+# Disable password expiration for your local user
+
+- Press `Win` + `r` (to pull up "Run") and open `lusrmgr.msc`
+- In the "Local Users and Groups" window that opens, click "Users" on the left
+- Right-click your user and select "Properties"
+- Check the "Password never expires" box and click "Apply"
+- Close the pop-up and the "Local Users and Groups" window
 
 # Install Git BASH
 
