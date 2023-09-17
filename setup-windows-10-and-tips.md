@@ -117,6 +117,19 @@ Press `win` key; search "this pc"
 - Check the "Password never expires" box and click "Apply"
 - Close the pop-up and the "Local Users and Groups" window
 
+# Enable God Mode
+
+> See <https://www.tomsguide.com/how-to/how-to-enable-god-mode-in-windows>
+
+# Install WSL 2 (Windows Subsystem for Linux)
+
+> It's recommended to run Windows Update to get the latest version of Windows
+> before attempting these steps.
+
+### If you have Windows 10 version 2004 and higher
+
+.
+
 # Install Git BASH
 
 Visit <https://github.com/git-for-windows/git/releases/latest>, download the
