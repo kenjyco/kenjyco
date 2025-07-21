@@ -16,6 +16,7 @@ A comprehensive ecosystem of 15+ interconnected CLI tools and Python libraries t
 
 **Shell Environment** ([base](https://github.com/kenjyco/base))
 - 900+ shell functions, scripts, and aliases for comprehensive development workflows
+- Conditionally defined functions only available when tools they wrap are installed
 - Git repository management, Docker orchestration, and environment setup
 - Tab completion and vi keybindings for efficient terminal interaction
 
@@ -27,26 +28,29 @@ A comprehensive ecosystem of 15+ interconnected CLI tools and Python libraries t
 - Linux-focused development with macOS compatibility
 
 **Core Libraries**
-- [**input-helper**](https://github.com/kenjyco/input-helper) - Data transformation and user interaction patterns
-- [**bg-helper**](https://github.com/kenjyco/bg-helper) - Shell command orchestration and background task management
-- [**dt-helper**](https://github.com/kenjyco/dt-helper) - Human-readable timestamp operations and temporal analysis
+- [**input-helper**](https://github.com/kenjyco/input-helper) - Data transformations, user interaction patterns, and pre-defined regex
+- [**bg-helper**](https://github.com/kenjyco/bg-helper) - CLI orchestration and background task management (git/docker/pyenv)
 - [**fs-helper**](https://github.com/kenjyco/fs-helper) - Filesystem operations and production-ready logging
-- [**settings-helper**](https://github.com/kenjyco/settings-helper) - Environment-aware configuration management
+- [**settings-helper**](https://github.com/kenjyco/settings-helper) - Environment-aware configuration management with INI files
 
 These core libraries follow Unix philosophy principles, reinforcing usage of decades-old core utilities (grep, find, xargs, sort, cut, tr) while seamlessly blending with Python. They leverage Python's built-in features extensively and minimize external dependencies, creating a composable foundation that enhances rather than replaces traditional shell workflows.
 
 **Data Management**
+- [**dt-helper**](https://github.com/kenjyco/dt-helper) - Human-readable timestamp operations and temporal analysis
 - [**redis-helper**](https://github.com/kenjyco/redis-helper) - Redis collections for rapid prototyping and analytics
-- [**sql-helper**](https://github.com/kenjyco/sql-helper) - SQLAlchemy wrapper with automatic Docker container provisioning
-- [**mongo-helper**](https://github.com/kenjyco/mongo-helper) - MongoDB wrapper for exploratory data analysis
+- [**sql-helper**](https://github.com/kenjyco/sql-helper) - SQLAlchemy wrapper for exploring SQLite, PostgreSQL, and MySQL
+- [**mongo-helper**](https://github.com/kenjyco/mongo-helper) - MongoDB wrapper for data analysis and aggregate reporting
 - [**webclient-helper**](https://github.com/kenjyco/webclient-helper) - HTTP client with embedded debugging and history tracking
 
 **Specialized Tools**
 - [**aws-info-helper**](https://github.com/kenjyco/aws-info-helper) - AWS resource information with three-tier data access
-- [**chloop**](https://github.com/kenjyco/chloop) - Character-driven interactive development framework
+- [**chloop**](https://github.com/kenjyco/chloop) - Character-driven REPL framework backed by Redis
+- [**mocp-cli**](https://github.com/kenjyco/mocp-cli) - Interactive music player built on MOC (Music on Console) and chloop
+- [**vlc-helper**](https://github.com/kenjyco/vlc-helper) - CLI for precise video control and screenshot capture with VLC media player built on chloop
 
 **Meta-Package** ([libs](https://github.com/kenjyco/libs))
 - Flexible installation options: `kenjyco-libs`, `kenjyco-libs[data]`, `kenjyco-libs[full]`, etc.
+  - *does not include mocp-cli or vlc-helper*
 - `kenjyco-dev-setup` command for local development that clones all repositories and installs them in editable mode
 - Enables dogfooding in-progress changes across all repositories within the same environment
 - `kenjyco-ipython` command that auto-imports all installed packages, minimizing history clutter from repetitive import statements during testing and experimentation
